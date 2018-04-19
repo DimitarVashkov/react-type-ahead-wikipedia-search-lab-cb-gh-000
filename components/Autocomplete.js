@@ -21,7 +21,7 @@ class Autocomplete extends React.Component {
       query: event.target.value
     })
   }
-  
+
   render() {
     return (
       <div className='autocomplete'>
