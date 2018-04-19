@@ -17,8 +17,8 @@ const search = (query) => {
     const results = titles.map((title,index) => (
       {
         title,
-        descriptions[index],
-        links[index]
+        description: descriptions[index],
+        link: links[index]
       }
     ));
 
