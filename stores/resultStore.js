@@ -3,12 +3,6 @@
 import Store from './Store';
 
 class ResultStore extends Store {
-  constructor(initialState){
-    super(initialState);
-    this.state = {
-      results: []
-    }
-  }
 
   isOutdated(date){
     if (date < this.getState().updated){
@@ -20,6 +14,9 @@ class ResultStore extends Store {
   }
 }
 
-const resultStore = new ResultStore();
+const resultStore = new ResultStore({
+  results: [],
+  updated: new Date(),
+});
 
 export default resultStore;
