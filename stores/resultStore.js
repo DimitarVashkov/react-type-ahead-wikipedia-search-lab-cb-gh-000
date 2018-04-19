@@ -5,6 +5,9 @@ import Store from './Store';
 class ResultStore extends Store {
   constructor(initialState){
     super(initialState);
+    this.state = {
+      results: []
+    }
   }
 
   isOutdated(date){
