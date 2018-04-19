@@ -6,6 +6,10 @@ class ResultStore extends Store {
   constructor(){
     super();
   }
+
+  isOutdated(){
+    
+  }
 }
 
 const resultStore = new ResultStore();
