@@ -12,6 +12,15 @@ const search = (query) => {
       return;
     }
 
+    const [query, titles, descriptions, links] = data
+
+    const results = titles.map((title,index) => (
+      {
+        title,
+        descriptions[index],
+        links[index]
+      }
+    ));
 
     resultStore.setState({
       results: data,
