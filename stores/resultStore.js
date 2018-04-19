@@ -5,10 +5,13 @@ import Store from './Store';
 class ResultStore extends Store {
   constructor(){
     super();
+    this.state = {
+      updated: Date.now()
+    }
   }
 
   isOutdated(){
-    
+
   }
 }
 
