@@ -11,6 +11,7 @@ const search = (query) => {
     if (resultStore.isOutdated(requested)){
       return;
     }
+    console.log(data)
     
 
   });
