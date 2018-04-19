@@ -15,11 +15,18 @@ class Autocomplete extends React.Component {
       query: ''
     };
   }
+
+  handleChange(event){
+    this.setState({
+      query: event.target.value
+    })
+  }
+  
   render() {
     return (
       <div className='autocomplete'>
         <h2>Autocomplete</h2>
-        <SearchField value={this.state.query}/>
+        <SearchField value={this.state.query} onChange={this.handleChange}/>
         <SearchResults results={this.state.results} />
       </div>
     );
