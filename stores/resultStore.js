@@ -3,11 +3,8 @@
 import Store from './Store';
 
 class ResultStore extends Store {
-  constructor(){
-    super();
-    this.state = {
-      updated: Date.now()
-    }
+  constructor(initialState){
+    super(initialState);
   }
 
   isOutdated(date){
