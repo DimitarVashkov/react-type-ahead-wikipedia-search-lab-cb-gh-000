@@ -14,6 +14,7 @@ class Autocomplete extends React.Component {
       results: resultStore.getState().results,
       query: ''
     };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event){
