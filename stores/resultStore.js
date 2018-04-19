@@ -10,7 +10,11 @@ class ResultStore extends Store {
     }
   }
 
-  isOutdated(){
+  isOutdated(date){
+    if (date < this.state.updated){
+      return true;
+    }
+    return false;
 
   }
 }
