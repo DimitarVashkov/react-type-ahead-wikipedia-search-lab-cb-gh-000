@@ -23,7 +23,7 @@ const search = (query) => {
     ));
 
     resultStore.setState({
-      results: data,
+      results: results,
       updated: requested
     })
 
