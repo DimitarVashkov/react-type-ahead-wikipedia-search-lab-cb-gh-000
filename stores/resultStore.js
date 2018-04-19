@@ -2,7 +2,10 @@
 
 import Store from './Store';
 
-class ResultStore {
+class ResultStore extends Store {
+  constructor(){
+    super();
+  }
 }
 
 const resultStore = new ResultStore();
