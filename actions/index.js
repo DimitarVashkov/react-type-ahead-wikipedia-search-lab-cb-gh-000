@@ -12,7 +12,7 @@ const search = (query) => {
       return;
     }
     console.log(data)
-    
+
 
   });
 };
