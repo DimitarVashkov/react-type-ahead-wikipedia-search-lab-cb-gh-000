@@ -3,7 +3,7 @@
 import React from 'react';
 
 const SearchResults = ({ results }) => (
-  <ul>
+  <ul className='search-results'>
   </ul>
 );
 
